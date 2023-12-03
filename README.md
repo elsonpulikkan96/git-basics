@@ -95,7 +95,7 @@ git init
 
 touch helloworld.py
 
-echo "print('Hello, World!')" > helloworld.py
+echo 'print("Hello, World!")' > helloworld.py
 
 git add helloworld.py
 
