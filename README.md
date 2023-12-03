@@ -110,6 +110,6 @@ git add helloworld.py
 
 git commit -m "Explain Git Workflow with a Python welcome page for nginx"
 
-git branch -M main
-
 git push -u origin main
+
+Install pyhton3, pip install flask and nginx as well.!
