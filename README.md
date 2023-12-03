@@ -1,5 +1,10 @@
 Git is a powerful centralized version control system (VCS) and collaboration tool widely employed by both system admins and devs in the DevOps ecosystem. It plays a crucial role in maintaining and managing multiple versions of applications, source code, documentation, and other project files.
 
+ref: 
+https://www.udemy.com/course/decodingdevops/
+https://medium.com/@samsamarullah/basic-git-github-for-devops-engineers-38c8a789909e
+GPT 😁
+
 Key Functions:
 
 Version Tracking and Management:
