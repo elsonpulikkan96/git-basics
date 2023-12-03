@@ -111,6 +111,8 @@ touch helloworld.py
 
 echo 'print("Hello, World!")' > helloworld.py
 
+git status
+
 git add helloworld.py
 
 git commit -m "Explain Git Workflow with a Python welcome page for nginx"
