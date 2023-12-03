@@ -34,8 +34,73 @@ Auditing and Compliance:
 
 Git logs and commit histories provide an audit trail, which is valuable for compliance purposes. DevOps engineers can trace the evolution of the system and document changes for regulatory requirements.
 
-Distributed andCentralized Configuration:
+Distributed and centralized Configuration:
 
 Configuring Git as a centralized version control system involves establishing a central repository (server) and allowing clients (developers or systems) to interact with it. This centralized approach ensures a single source of truth for the project's version history.
 
-In summary, Git's versatility and capabilities make it an powerfull tool in the DevOps providing a solid foundation for version control, collaboration, and automation in software development and system administration workflows.
+In summary, Git's versatility and capabilities make it an powerful tool in DevOps providing a solid foundation for version control, collaboration, and automation in software development and system administration workflows.
+
+***************************************************************************
+
+Launch and Amazon Linux ec2
+
+yum install git
+
+git --version
+
+git version 2.43.0
+
+Create an SSH Pub key to configure it with your GitHub account
+
+ssh-keygen -t rsa -b 4096 -C "elsonpulikkan@gmail.com"
+
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
+
+cat ~/.ssh/id_rsa.pub
+
+ssh-rsa AAA**************************************gr4CW2n91qAXIW7a08NIycZ1T/QllHleCpZ2svWxxSGIfZrBM0YuckJBmzuNf/EN9wNRfnqyNbmOYkDAb7QTuT+8X/6/66PcnqWQrTxDDK2McNVngd3gQknmZ0dIDxoXZoWwwnLSR3GCMzf6wMiRI/7aWEqbEFAOvR5LVlcf5XjJRliv/BtRTTo+/Y00yKft5E0Rldi+72S87ht2K2ERtXp0zIrYe+Ins1xhIdCJ7PfkdAQQfOvBcjQp05fPlBYkQ3P75SZh0mUkXsOsr929l5n9syfoJGEazkGzo33nF9ywOAdNmg /+s5OnnSRf61LjHrBr42hx4w== xxxx@gmail.com
+
+<<< Copy and paste the SSH pub key value to the GitHub account, Follow the below steps >>> 
+
+Open your GitHub account >  settings.
+Go to "SSH and GPG keys."
+Click "New SSH key."
+
+Paste the copied key into the "Key" field and add
+
+Check connection: ssh -T git@github.com
+
+Follow the below steps to configure your Git identity on the server and set your username and email. Afterwards, login to your GitHub account create an empty public or private repository and track its URL
+
+eg: https://github.com/elsonpulikkan96/git-basics
+
+Afterwards, clone this repository you created on your GitHub account to local machine.
+
+
+git clone https://github.com/elsonpulikkan96/git-basics
+
+set the remote URL of the Repo to Use SSH
+
+git remote set-url origin git@github.com:elsonpulikkan96/git-basics.git
+
+Run the following command to see the current remote URL:
+
+git remote -v
+
+Now the Repo will be already downloaded on your local machine, Go to the cloned remote repo, create a HelloWorld python file and push the file to the main branch of the Repo.
+
+cd git-basics
+
+git init
+
+touch helloworld.py
+
+echo "print('Hello, World!')" > helloworld.py
+
+git add helloworld.py
+
+git commit -m "Explain Git Workflow with a Python welcome page for nginx"
+
+git branch -M main
+
+git push -u origin main
