@@ -83,7 +83,7 @@ Follow the below steps to configure your Git identity on the server and set your
 
 eg: https://github.com/elsonpulikkan96/git-basics
 
-Afterwards, clone this repository you created on your GitHub account to local machine.
+Afterwards, clone this repository you created on your GitHub account to your local machine.
 
 
 git clone https://github.com/elsonpulikkan96/git-basics
@@ -100,7 +100,12 @@ Now the Repo will be already downloaded on your local machine, Go to the cloned 
 
 cd git-basics
 
-git init
+Set Git identity on the server, set your username and email
+
+git config --global user.name "elson"
+git config --global user.email "elsonpulikkan@gmail.com"
+
+git init -  command is used to initialize the Git repository on locally
 
 touch helloworld.py
 
