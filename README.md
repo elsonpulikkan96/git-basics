@@ -116,7 +116,9 @@ touch helloworld.py
 
 echo 'print("Hello, World!")' > helloworld.py
 
-git status
+git status - To check the status
+
+git ls-files - To list the files in the current working directory
 
 git add helloworld.py
 
