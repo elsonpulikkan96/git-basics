@@ -90,7 +90,12 @@ git clone https://github.com/elsonpulikkan96/git-basics
 
 set the remote URL of the Repo to Use SSH
 
-git remote set-url origin git@github.com:elsonpulikkan96/git-basics.git
+
+git remote add origin git@github.com:elsonpulikkan96/git-basics
+
+
+git remote set-url origin git@github.com:elsonpulikkan96/git-basics
+
 
 Run the following command to see the current remote URL:
 
