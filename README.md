@@ -101,7 +101,7 @@ Run the following command to see the current remote URL:
 
 git remote -v
 
-Now the Repo will be already downloaded on your local machine, Go to the cloned remote repo, create a HelloWorld python file and push the file to the main branch of the Repo.
+Now the Repo will be already downloaded on your local machine, Go to the cloned remote repo, create a HelloWorld python file andpush the file to the main branch of the Repo.
 
 cd git-basics
 
@@ -120,10 +120,9 @@ git status - To check the status
 
 git ls-files - To list the files in the current working directory
 
-git add helloworld.py
+git add helloworld.py - To add the file as object to Git index
 
 git commit -m "Explain Git Workflow with a Python welcome page for nginx"
 
 git push -u origin main
 
-Install pyhton3, pip install flask and nginx as well.!
