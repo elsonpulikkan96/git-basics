@@ -52,9 +52,9 @@ In summary, Git's versatility and capabilities make it an powerful tool in DevOp
 ***************************************************************************
 
 Launch and Amazon Linux ec2
-
+```sh
 yum install git
-
+```
 git --version
 
 git version 2.43.0
