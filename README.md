@@ -82,34 +82,36 @@ Click "New SSH key."
 
 Paste the copied key into the "Key" field and add
 
-Check connection: ssh -T git@github.com
-
+Check SSH connection:
+```sh
+ssh -T git@github.com
+```
 Follow the below steps to configure your Git identity on the server and set your username and email. Afterwards, login to your GitHub account create an empty public or private repository and track its URL
 
 eg: https://github.com/elsonpulikkan96/git-basics
 
 Afterwards, clone this repository you created on your GitHub account to your local machine.
 
-
+```sh
 git clone https://github.com/elsonpulikkan96/git-basics
-
+```
 set the remote URL of the Repo to Use SSH
 
-
+```sh
 git remote add origin git@github.com:elsonpulikkan96/git-basics
-
-
+```
+```sh
 git remote set-url origin git@github.com:elsonpulikkan96/git-basics
-
+```
 
 Run the following command to see the current remote URL:
-
+```sh
 git remote -v
-
+```
 Now the Repo will be already downloaded on your local machine, Go to the cloned remote repo, create a HelloWorld python file andpush the file to the main branch of the Repo.
-
+```sh
 cd git-basics
-
+```
 Set Git identity on the server, set your username and email
 
 git config --global user.name "elson"
