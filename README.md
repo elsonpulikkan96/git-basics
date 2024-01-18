@@ -51,24 +51,29 @@ In summary, Git's versatility and capabilities make it an powerful tool in DevOp
 
 ***************************************************************************
 
-Launch and Amazon Linux ec2
+Launch an Amazon Linux ec2 anmd install Git Package:
 ```sh
 yum install git
 ```
+Git version check:
+
+```sh
 git --version
 
 git version 2.43.0
-
+```
 Create an SSH Pub key to configure it with your GitHub account
-
+```sh
 ssh-keygen -t rsa -b 4096 -C "elsonpulikkan@gmail.com"
-
+```
+```sh
 eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
-
+```
+```sh
 cat ~/.ssh/id_rsa.pub
 
 ssh-rsa AAA**************************************gr4CW2n91qAXIW7a08NIycZ1T/QllHleCpZ2svWxxSGIfZrBM0YuckJBmzuNf/EN9wNRfnqyNbmOYkDAb7QTuT+8X/6/66PcnqWQrTxDDK2McNVngd3gQknmZ0dIDxoXZoWwwnLSR3GCMzf6wMiRI/7aWEqbEFAOvR5LVlcf5XjJRliv/BtRTTo+/Y00yKft5E0Rldi+72S87ht2K2ERtXp0zIrYe+Ins1xhIdCJ7PfkdAQQfOvBcjQp05fPlBYkQ3P75SZh0mUkXsOsr929l5n9syfoJGEazkGzo33nF9ywOAdNmg /+s5OnnSRf61LjHrBr42hx4w== xxxx@gmail.com
-
+```
 <<< Copy and paste the SSH pub key value to the GitHub account, Follow the below steps >>> 
 
 Open your GitHub account >  settings.
