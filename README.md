@@ -113,23 +113,38 @@ Now the Repo will be already downloaded on your local machine, Go to the cloned 
 cd git-basics
 ```
 Set Git identity on the server, set your username and email
-
+```sh
 git config --global user.name "elson"
+```
+```sh
 git config --global user.email "elsonpulikkan@gmail.com"
-
+```
+```sh
 git init -  command is used to initialize the Git repository on locally
+```
 
+```sh
 touch helloworld.py
-
+```
+```sh
 echo 'print("Hello, World!")' > helloworld.py
+```
 
+```sh
 git status - To check the status
-
+```
+```sh
 git ls-files - To list the files in the current working directory
+```
 
+```sh
 git add helloworld.py - To add the file as object to Git index
+```
 
+```sh
 git commit -m "Explain Git Workflow with a Python welcome page for nginx"
+```
 
+```sh
 git push -u origin main
-
+```
