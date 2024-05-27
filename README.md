@@ -114,7 +114,7 @@ cd git-basics
 ```
 Set Git identity on the server, set your username and email
 ```sh
-git config --global user.name "elson96"
+git config --global user.name "elsonpulikkan96"
 ```
 ```sh
 git config --global user.email "elsonpulikkan@gmail.com"
